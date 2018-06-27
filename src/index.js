@@ -12,8 +12,7 @@ const addReducer = (state = [], action) => {
     console.log('hello');
     if(action.type === 'ADD_SNACK'){
         console.log('im a snackie', action);
-        {state: [...this.props.action]}
-        return state
+        return [...state, action.payload];
     }
     return state;
 }

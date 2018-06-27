@@ -19,7 +19,7 @@ class App extends Component {
     }
   }
 
-  handleAddSnack = (event) => {
+  handleAddSnack = () => {
     const action = {type: 'ADD_SNACK', payload: this.state.snack}
     this.props.dispatch(action);
   }

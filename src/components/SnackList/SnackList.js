@@ -10,13 +10,14 @@ class Snacks extends Component {
 
 
     render(){
+        console.log(this.props.reduxState)
         return(
             <div>
                 <pre>{ JSON.stringify(this.props.reduxState )}</pre>
-                <h1>hello</h1>
+
                 <ul>
-                    {/* {this.props.reduxState.map(snackie => 
-                    <li>Name: {snackie}</li>)} */}
+                    {/* { this.props.reduxState.map(snackie => 
+                    <li>Name: {snackie.snack}</li> )} */}
                 </ul>
             </div>
         )
