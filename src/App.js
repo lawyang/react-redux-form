@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
-import SnackList from './components/SnackList/SnackList';
+import Snacks from './components/SnackList/SnackList';
 
 
 // allowing us to acces our redux state on props
@@ -15,7 +15,7 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      snack: []
+      snack: ''
     }
   }
 
@@ -46,7 +46,7 @@ class App extends Component {
       <input placeholder="Good Snack Only" onChange={ this.handleSnackInput } value={this.state.snack} />
       <button onClick={this.handleAddSnack}> ADDIE A SNACKIE </button>
       
-      <SnackList snackList={this.state.snack} />
+      <Snacks snackList={this.state.snack} />
         
         
         
